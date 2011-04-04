@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://ontofox.hegroup.org/dji7btvx.owl#"
+     xml:base="http://ontofox.hegroup.org/dji7btvx.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="&obo;OBI_0000283"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0002376 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0002376">
+        <rdfs:label xml:lang="en"
+            >immune system process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0008150"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >Any process involved in the development or functioning of the immune system, an organismal system for calibrated responses to potential internal or invasive threats.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en"
+            >immune system process</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0006950 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0006950">
+        <rdfs:label xml:lang="en"
+            >response to stress</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0050896"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >A change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en"
+            >response to abiotic stress</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en"
+            >response to biotic stress</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en"
+            >response to stress</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0006952 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0006952">
+        <rdfs:label xml:lang="en"
+            >defense response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006950"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >Reactions, triggered in response to the presence of a foreign body or the occurrence of an injury, which result in restriction of damage to the organism attacked or prevention/recovery from the infection caused by the attack.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en"
+            >antimicrobial peptide activity</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en"
+            >defence response</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en"
+            >defense response</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en"
+            >defense/immunity protein activity</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en"
+            >physiological defense response</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0006955 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0006955">
+        <rdfs:label xml:lang="en">immune response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0002376"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0050896"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">immune response</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0006959 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0006959">
+        <rdfs:label xml:lang="en"
+            >humoral immune response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006955"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >An immune response mediated through a body fluid.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en"
+            >humoral immune response</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0008150">
+        <rdfs:label xml:lang="en"
+            >biological_process</rdfs:label>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en"
+            >biological process</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en"
+            >biological_process</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en"
+            >physiological process</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0009607 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0009607">
+        <rdfs:label xml:lang="en"
+            >response to biotic stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0050896"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >A change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a biotic stimulus, a stimulus caused or produced by a living organism.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en"
+            >response to biotic stimulus</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0009617 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0009617">
+        <rdfs:label xml:lang="en"
+            >response to bacterium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0051707"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >A change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus from a bacterium.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en"
+            >response to bacteria</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en"
+            >response to bacterium</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0019730 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0019730">
+        <rdfs:label xml:lang="en"
+            >antimicrobial humoral response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006959"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0051707"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >An immune response against microbes mediated through a body fluid. Examples of this process are seen in the antimicrobial humoral response of Drosophila melanogaster and Mus musculus.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en"
+            >antimicrobial humoral response</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0019731 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0019731">
+        <rdfs:label xml:lang="en"
+            >antibacterial humoral response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0019730"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0042742"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >An immune response against bacteria mediated through a body fluid. Examples of this process are the antibacterial humoral responses in Mus musculus and Drosophila melanogaster.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en"
+            >antibacterial humoral response</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0042742 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0042742">
+        <rdfs:label xml:lang="en"
+            >defense response to bacterium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006952"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0009617"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >Reactions triggered in response to the presence of a bacterium that act to protect the cell or organism.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en"
+            >antibacterial peptide activity</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en"
+            >defence response to bacteria</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en"
+            >defence response to bacterium</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en"
+            >defense response to bacteria</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en"
+            >defense response to bacterium</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0043152 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0043152">
+        <rdfs:label xml:lang="en"
+            >induction of bacterial agglutination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0019731"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >Any process by which infecting bacteria are clumped together by a host organism.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en"
+            >induction of bacterial agglutination</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0050896 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0050896">
+        <rdfs:label xml:lang="en"
+            >response to stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0008150"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >A change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en"
+            >physiological response to stimulus</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en"
+            >response to stimulus</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0051704 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0051704">
+        <rdfs:label xml:lang="en"
+            >multi-organism process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0008150"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >Any process by which an organism has an effect on another organism of the same or different species.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en"
+            >interaction between organisms</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en"
+            >multi-organism process</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en"
+            >physiological interaction between organisms</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en"
+            >physiological interaction with other organism</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0051707 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0051707">
+        <rdfs:label xml:lang="en"
+            >response to other organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0009607"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0051704"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/GO</obo:OBI_0000283>
+        <obo:IAO_0000115 xml:lang="en"
+            >A change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus from another living organism.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en"
+            >response to other organism</obo:IAO_0000111>
+    </owl:Class>
+</rdf:RDF>

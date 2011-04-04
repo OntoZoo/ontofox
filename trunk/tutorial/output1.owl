@@ -1,0 +1,1372 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="http://ontofox.hegroup.org/hep40uu7.owl#"
+     xml:base="http://ontofox.hegroup.org/hep40uu7.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OBI_0000283"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="&obo;OBI_0100026"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117570 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117570">
+        <rdfs:label xml:lang="en">Teleostomi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7776"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117571 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117571">
+        <rdfs:label xml:lang="en">Euteleostomi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117570"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en"
+                    >bony vertebrates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en"
+                    >bony vertebrates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_207598 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_207598">
+        <rdfs:label xml:lang="en"
+            >Homo/Pan/Gorilla group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9604"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_2759 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_2759">
+        <rdfs:label xml:lang="en">Eukaryota</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">eucaryotes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">eukaryotes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Eukaryotae</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Eucaryotae</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Eucaryotae</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Eukarya</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Eukaryotae</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">eukaryotes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Eucarya</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Eukarya</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">eukaryotes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">eucaryotes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Eucarya</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">eukaryotes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314146 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314146">
+        <rdfs:label xml:lang="en"
+            >Euarchontoglires</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9347"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314293 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314293">
+        <rdfs:label xml:lang="en">Simiiformes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_376913"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Anthropoidea</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Anthropoidea</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314295 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314295">
+        <rdfs:label xml:lang="en">Hominoidea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9526"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">apes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">apes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32523 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32523">
+        <rdfs:label xml:lang="en">Tetrapoda</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_8287"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">tetrapods</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">tetrapods</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32524 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32524">
+        <rdfs:label xml:lang="en">Amniota</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32523"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">amniotes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">amniotes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32525 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32525">
+        <rdfs:label xml:lang="en">Theria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_40674"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33154 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33154">
+        <rdfs:label xml:lang="en"
+            >Fungi/Metazoa group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_2759"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33208 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33208">
+        <rdfs:label xml:lang="en">Metazoa</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33154"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Animalia</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en"
+                    >multicellular animals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">animals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en"
+                    >multicellular animals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">metazoans</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Animalia</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">metazoans</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">animals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33213 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33213">
+        <rdfs:label xml:lang="en">Bilateria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_6072"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33316 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33316">
+        <rdfs:label xml:lang="en">Coelomata</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33213"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33511 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33511">
+        <rdfs:label xml:lang="en">Deuterostomia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33316"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_376913 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_376913">
+        <rdfs:label xml:lang="en">Haplorrhini</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9443"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_40674 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_40674">
+        <rdfs:label xml:lang="en">Mammalia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32524"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">mammals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">mammals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">mammals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">mammals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_6072 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_6072">
+        <rdfs:label xml:lang="en">Eumetazoa</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33208"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7711 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7711">
+        <rdfs:label xml:lang="en">Chordata</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33511"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">chordates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">chordates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">chordates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">chordates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7742 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7742">
+        <rdfs:label xml:lang="en">Vertebrata</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_89593"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">vertebrates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">vertebrates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">vertebrates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">vertebrates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7776 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7776">
+        <rdfs:label xml:lang="en">Gnathostomata</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7742"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en"
+                    >jawed vertebrates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en"
+                    >jawed vertebrates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_8287 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_8287">
+        <rdfs:label xml:lang="en">Sarcopterygii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117571"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_89593 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_89593">
+        <rdfs:label xml:lang="en">Craniata</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7711"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9347 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9347">
+        <rdfs:label xml:lang="en">Eutheria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32525"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">placentals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en"
+                    >placental mammals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Placentalia</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Placentalia</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en"
+                    >placental mammals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en"
+                    >eutherian mammals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">placentals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en"
+                    >eutherian mammals</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9443 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9443">
+        <rdfs:label xml:lang="en">Primates</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314146"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Primata</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">primates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Primata</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">primate</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">primate</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">primates</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9526 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9526">
+        <rdfs:label xml:lang="en">Catarrhini</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314293"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9604 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9604">
+        <rdfs:label xml:lang="en">Hominidae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314295"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Pongidae</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">Pongidae</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">great apes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">great apes</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9605 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9605">
+        <rdfs:label xml:lang="en">Homo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_207598"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9606">
+        <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9605"/>
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">man</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">human</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">man</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>
+            <oboInOwl:Synonym>
+                <rdfs:label xml:lang="en">human</rdfs:label>
+            </oboInOwl:Synonym>
+        </oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#Synonym -->
+
+    <owl:Class rdf:about="&oboInOwl;Synonym">
+        <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
+            >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid1 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid1"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">chordates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid10 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid10"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">mammals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid11 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid11"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Pongidae</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid12 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid12"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Pongidae</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid13 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid13"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">great apes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid14 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid14"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">great apes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid15 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid15"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">vertebrates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid16 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid16"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">vertebrates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid17 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid17"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">vertebrates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid18 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid18"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">vertebrates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid19 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid19"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">amniotes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid2 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid2"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">chordates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid20 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid20"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">amniotes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid21 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid21"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Placentalia</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid22 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid22"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">placentals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid23 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid23"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en"
+            >eutherian mammals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid24 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid24"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en"
+            >eutherian mammals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid25 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid25"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Placentalia</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid26 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid26"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en"
+            >placental mammals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid27 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid27"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">placentals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid28 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid28"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en"
+            >placental mammals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid29 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid29"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">eukaryotes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid3 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid3"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">chordates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid30 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid30"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Eukaryotae</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid31 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid31"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Eukarya</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid32 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid32"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">eucaryotes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid33 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid33"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Eucaryotae</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid34 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid34"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Eukarya</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid35 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid35"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Eukaryotae</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid36 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid36"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">eukaryotes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid37 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid37"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">eucaryotes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid38 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid38"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Eucaryotae</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid39 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid39"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">eukaryotes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid4 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid4"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">chordates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid40 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid40"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">eukaryotes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid41 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid41"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Eucarya</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid42 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid42"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Eucarya</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid43 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid43"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">apes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid44 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid44"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">apes</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid45 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid45"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">tetrapods</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid46 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid46"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">tetrapods</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid47 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid47"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">primate</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid48 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid48"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">primates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid49 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid49"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">primate</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid5 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid5"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en"
+            >jawed vertebrates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid50 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid50"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">primates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid51 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid51"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Primata</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid52 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid52"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Primata</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid53 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid53"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en"
+            >multicellular animals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid54 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid54"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">metazoans</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid55 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid55"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Animalia</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid56 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid56"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en"
+            >multicellular animals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid57 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid57"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">animals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid58 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid58"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Animalia</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid59 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid59"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">animals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid6 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid6"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en"
+            >jawed vertebrates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid60 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid60"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">metazoans</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid61 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid61"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Anthropoidea</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid62 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid62"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">Anthropoidea</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid63 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid63"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en"
+            >bony vertebrates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid64 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid64"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en"
+            >bony vertebrates</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid65 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid65"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">man</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid66 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid66"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">human</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid67 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid67"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">man</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid68 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid68"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">human</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid7 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid7"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">mammals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid8 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid8"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">mammals</rdfs:label>
+    </oboInOwl:Synonym>
+    
+
+
+    <!-- http://ontofox.hegroup.org/pymx5hfe.out.owl#genid9 -->
+
+    <rdf:Description rdf:about="http://ontofox.hegroup.org/pymx5hfe.out.owl#genid9"/>
+    <oboInOwl:Synonym>
+        <rdfs:label xml:lang="en">mammals</rdfs:label>
+    </oboInOwl:Synonym>
+</rdf:RDF>
