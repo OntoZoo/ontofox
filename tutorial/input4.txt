@@ -1,0 +1,48 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/example.owl
+
+
+[Source ontology]
+#comment here
+#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO
+OBI #another comment here
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0100060 #cell culture
+
+[Top level source term URIs and target direct superclass URIs]
+http://www.ifomis.org/bfo/1.1#Entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000118
+
+
+[Source ontology]
+#comment here
+#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO
+NCBITaxon
+
+[Low level source term URIs]
+http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9606 #Homo Sapiens (human)
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.org/obo/owl/NCBITaxon#NCBITaxon_2759 #Eukaryota
+subClassOf http://purl.obolibrary.org/obo/OBI_0100026 #organism
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
