@@ -1,5 +1,4 @@
-<?php
-include_once('../inc/functions.php');
+<?php include_once('../inc/functions.php');
 
 $db = ADONewConnection($driver);
 $db->Connect($host, $username, $password, $database);
@@ -10,7 +9,7 @@ $db->Connect($host, $username, $password, $database);
 <html><!-- InstanceBegin template="/Templates/default.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>OntoFox</title>
+<title>Ontofox</title>
 <!-- InstanceEndEditable --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="shortcut icon" href="/favicon.ico" />
 <link href="../styleMain.css" rel="stylesheet" type="text/css">
@@ -28,20 +27,19 @@ $db->Connect($host, $username, $password, $database);
 
 <body>
 <div id="topbanner"><a href="/index.php"><img src="../Images/logo.gif" alt="Logo" width="280" height="50" border="0"></a></div>
-<div id="topnav"><a href="../index.php" class="topnav">Home</a><a href="../introduction.php" class="topnav">Introduction</a><a href="index.php" class="topnav">Tutorial</a><a href="../faqs.php" class="topnav">FAQs</a><a href="../references.php" class="topnav">References</a><a href="../links.php" class="topnav">Links</a><a href="../contactus.php" class="topnav">Contact</a><a href="../acknowledge.php" class="topnav">Acknowledge</a></div>
+<div id="topnav"><a href="../index.php" class="topnav">Home</a><a href="../introduction.php" class="topnav">Introduction</a><a href="index.php" class="topnav">Tutorial</a><a href="../faqs.php" class="topnav">FAQs</a><a href="../references.php" class="topnav">References</a><a href="../download.php" class="topnav">Download</a><a href="../links.php" class="topnav">Links</a><a href="../contactus.php" class="topnav">Contact</a><a href="../acknowledge.php" class="topnav">Acknowledge</a><a href="../news.php" class="topnav">News</a></div>
 <div id="mainbody">
 <!-- InstanceBeginEditable name="Main" -->
 <h3 class="head3_darkred">Tutorial</h3>
 
 <p>&nbsp;</p>
 
-<?php
-$strSql = "select * from ontology where to_list='y' order by ontology_abbrv";
+<?php $strSql = "select * from ontology where loaded='y' order by ontology_abbrv";
 $rs = $db->Execute($strSql);
 
 if(!$rs->EOF) {
 ?>
-<p><strong>Full list of  ontologies included in OntoFox.</strong></p>
+<p><strong>Full list of  ontologies included in Ontofox.</strong></p>
   <table border="0" cellpadding="3" cellspacing="1" bgcolor="#333333">
     <tr>
       <th bgcolor="#FFFFFF">#</th>
@@ -49,29 +47,28 @@ if(!$rs->EOF) {
       <th bgcolor="#FFFFFF">Ontology Full Name</th>
       <th bgcolor="#FFFFFF">Term URI example</th>
     </tr>
-<?php
-	$i=0;
+<?php 	$i=0;
 	foreach ($rs as $row) {
 		$i++;
 ?>
     <tr>
-      <th bgcolor="#FFFFFF" style="width:60px"><?=$i?></th>
-      <th bgcolor="#FFFFFF"><?=$row['ontology_abbrv']?></th>
-      <td bgcolor="#FFFFFF"><?=$row['ontology_fullname']?></th>
-      <td bgcolor="#FFFFFF"><?=$row['url_eg']?></th>
+      <th bgcolor="#FFFFFF" style="width:60px"><?php echo $i?></th>
+      <th bgcolor="#FFFFFF"><a href="http://www.ontobee.org/browser/index.php?o=<?php echo $row['ontology_abbrv']?>"><?php echo $row['ontology_abbrv']?></a></th>
+      <td bgcolor="#FFFFFF"><?php echo $row['ontology_fullname']?></th>
+      <td bgcolor="#FFFFFF"><?php echo $row['url_eg']?></th>
     </tr>
-<?
+<?php 
 	}
 ?>
   </table>
 
-<?php
-}
+<?php }
 ?>
   
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<!-- InstanceEndEditable --></div>
+<!-- InstanceEndEditable -->
+</div>
 <div id="footer">
   <div id="footer_hl"></div>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">

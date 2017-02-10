@@ -91,22 +91,22 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117570 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_117570 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117570">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_117570">
         <rdfs:label xml:lang="en">Teleostomi</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7776"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7776"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117571 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_117571 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117571">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_117571">
         <rdfs:label xml:lang="en">Euteleostomi</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117570"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_117570"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasExactSynonym>
@@ -125,21 +125,21 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_207598 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_207598 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_207598">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_207598">
         <rdfs:label xml:lang="en"
             >Homo/Pan/Gorilla group</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9604"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_2759 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_2759">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759">
         <rdfs:label xml:lang="en">Eukaryota</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
@@ -218,23 +218,23 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314146 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_314146 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314146">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_314146">
         <rdfs:label xml:lang="en"
             >Euarchontoglires</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9347"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9347"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314293 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_314293 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314293">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_314293">
         <rdfs:label xml:lang="en">Simiiformes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_376913"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_376913"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasRelatedSynonym>
@@ -251,11 +251,11 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314295 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_314295 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314295">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_314295">
         <rdfs:label xml:lang="en">Hominoidea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9526"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9526"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasExactSynonym>
@@ -272,11 +272,11 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32523 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_32523 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32523">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_32523">
         <rdfs:label xml:lang="en">Tetrapoda</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_8287"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_8287"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasExactSynonym>
@@ -293,11 +293,11 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32524 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_32524 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32524">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_32524">
         <rdfs:label xml:lang="en">Amniota</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32523"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasExactSynonym>
@@ -314,34 +314,34 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32525 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_32525 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32525">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_32525">
         <rdfs:label xml:lang="en">Theria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_40674"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_40674"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33154 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33154 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33154">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_33154">
         <rdfs:label xml:lang="en"
             >Fungi/Metazoa group</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_2759"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33208 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33208 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33208">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_33208">
         <rdfs:label xml:lang="en">Metazoa</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33154"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33154"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasRelatedSynonym>
@@ -390,55 +390,55 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33213 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33213 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33213">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_33213">
         <rdfs:label xml:lang="en">Bilateria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_6072"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6072"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33316 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33316 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33316">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_33316">
         <rdfs:label xml:lang="en">Coelomata</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33213"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33213"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33511 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33511 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33511">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_33511">
         <rdfs:label xml:lang="en">Deuterostomia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33316"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33316"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_376913 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_376913 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_376913">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_376913">
         <rdfs:label xml:lang="en">Haplorrhini</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9443"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9443"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_40674 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_40674 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_40674">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_40674">
         <rdfs:label xml:lang="en">Mammalia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32524"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32524"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasExactSynonym>
@@ -465,22 +465,22 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_6072 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6072 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_6072">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6072">
         <rdfs:label xml:lang="en">Eumetazoa</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33208"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7711 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7711 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7711">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7711">
         <rdfs:label xml:lang="en">Chordata</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33511"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33511"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasRelatedSynonym>
@@ -507,11 +507,11 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7742 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7742 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7742">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7742">
         <rdfs:label xml:lang="en">Vertebrata</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_89593"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_89593"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasRelatedSynonym>
@@ -538,11 +538,11 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7776 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7776 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7776">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7776">
         <rdfs:label xml:lang="en">Gnathostomata</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7742"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasExactSynonym>
@@ -561,33 +561,33 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_8287 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_8287 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_8287">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_8287">
         <rdfs:label xml:lang="en">Sarcopterygii</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117571"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_117571"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_89593 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_89593 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_89593">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_89593">
         <rdfs:label xml:lang="en">Craniata</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7711"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7711"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9347 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9347 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9347">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9347">
         <rdfs:label xml:lang="en">Eutheria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32525"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32525"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasRelatedSynonym>
@@ -638,11 +638,11 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9443 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9443 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9443">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9443">
         <rdfs:label xml:lang="en">Primates</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314146"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_314146"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasExactSynonym>
@@ -679,22 +679,22 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9526 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9526 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9526">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9526">
         <rdfs:label xml:lang="en">Catarrhini</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314293"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_314293"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9604 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9604 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9604">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9604">
         <rdfs:label xml:lang="en">Hominidae</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314295"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_314295"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasExactSynonym>
@@ -721,22 +721,22 @@
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9605 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9605 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9605">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9605">
         <rdfs:label xml:lang="en">Homo</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_207598"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_207598"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9606 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9606">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9605"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9605"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/NCBITaxon</obo:OBI_0000283>
         <oboInOwl:hasExactSynonym>

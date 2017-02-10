@@ -4,19 +4,16 @@ http://purl.obolibrary.org/obo/example.owl
 
 [Source ontology]
 #comment here
-#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO
 GO
 
 [Low level source term URIs]
-http://purl.org/obo/owl/GO#GO_0043152 #induction of bacterial agglutination
+http://purl.obolibrary.org/obo/GO_0043152 #induction of bacterial agglutination
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.org/obo/owl/GO#GO_0008150
+http://purl.obolibrary.org/obo/GO_0008150
 
 [Source term retrieval setting]
 includeAllIntermediates
-
-[Branch extractions from source term URIs and target direct superclass URIs]
 
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label

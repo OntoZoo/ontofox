@@ -35,14 +35,14 @@ h3 {
 }
 
 div#topbanner {
-	width:740px;
+	width:924px;
 	margin-left:auto;
 	margin-right:auto;
 }
 
 div#topnav {
 	background-color:#2c446d;
-	width:740px;
+	width:924px;
 	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
@@ -72,7 +72,7 @@ div#topnav a:hover {
 
 div#mainbody {
 	background-color:#FFFFFF;
-	width:720px;
+	width:904px;
 	clear:both;
 	margin-bottom:0px;
 	margin-top:0px;
@@ -85,7 +85,7 @@ div#mainbody {
 
 div#footer {
 	background-color:#FFFFFF;
-	width:720px;
+	width:904px;
 	font-size:11px;
 	color:#2C495B;
 	margin-top:0px;
@@ -111,7 +111,7 @@ div#footer a:hover {
 
 div#footer_hl {
 	background-color:#2c446d;
-	width:720px;
+	width:904px;
 	height:1px;
 	margin-left:auto;
 	margin-right:auto;
