@@ -721,158 +721,175 @@ FILTER (?s in (<".join('>
 				$processed_iris[$tmp_iri] = $label;
 			}
 			
-			
-	
-			if (preg_match_all('/<rdf:Description.*?rdf:Description>/', $rdf, $matches)){
-				$lines=$matches[0];
-				$num_lines = sizeof($lines);
-				
-				for($i=$num_lines-1; $i>=0; $i--) {
-					foreach ($parent_included_iris as $parent_included_iri => $parent_included_label) {
-						if (strpos($lines[$i], '<rdf:Description rdf:about="'.$parent_included_iri.'"><rdfs:subClassOf rdf:resource="http://')!==false) {
-//								print("<!--{$lines[$i]}-->");
-							unset($lines[$i]); 
-							break;
-						}
-						if (strpos($lines[$i], '<rdf:Description rdf:about="'.$parent_included_iri.'"><rdfs:subPropertyOf rdf:resource="http://')!==false) {
-//								print("<!--{$lines[$i]}-->");
-							unset($lines[$i]); 
-							break;
-						}
+			/* 2017/02/23: Update to support Virtuoso 7 */
+//			print_r( $rdf );
+			# Extract xmlns
+			$xmlns = [];
+			if ( preg_match_all( '/xmlns:(\w+)="([^"]+?)"/', $rdf, $matches ) ) {
+				foreach ( $matches[0] as $i => $full_match ) {
+					if ( !array_key_exists( $matches[1][$i], $xmlns ) ) {
+						$xmlns[$matches[1][$i]] = $matches[2][$i];
 					}
-				}
-				
-//					print_r($lines);
-
-
-				if (!$includeAllAxioms && !$includeAllAxiomsRecursively) {
-					//drop this kind of supperclass to avoid importing too many terms
-					for($i=$num_lines-1; $i>=0; $i--) {
-						if (isset($lines[$i]) && strpos($lines[$i], '<rdfs:subClassOf rdf:nodeID="')!==false) {
-							unset($lines[$i]); 
-						}
-						if (isset($lines[$i]) && strpos($lines[$i], '<rdfs:subPropertyOf rdf:nodeID="')!==false) {
-							unset($lines[$i]); 
-						}
+					if ( !array_key_exists( $matches[2][$i], $outputNSs ) ) {
+						$outputNSs[$matches[2][$i]] = $matches[1][$i];
 					}
-				}
-
-
-			
-
-				//drop disjointWith to avoid importing too many terms
-				for($i=$num_lines-1; $i>=0; $i--) {
-					if (isset($lines[$i]) && strpos($lines[$i], 'disjointWith')!==false) {
-						unset($lines[$i]); 
-					}
-				}
-				
-				//drop owl:Thing
-				for($i=$num_lines-1; $i>=0; $i--) {
-					if (isset($lines[$i]) && strpos($lines[$i], '<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>')!==false) {
-						unset($lines[$i]); 
-					}
-				}
-				
-
-				for($i=$num_lines-1; $i>=0; $i--) {
-					if (isset($lines[$i]) && preg_match('/\w+:(\w+?) xmlns:\w+="([^"]+?)"/', $lines[$i], $match)){
-						$tmp_iri=$match[2].$match[1];
-						if (!isset($processed_iris[$tmp_iri])) {
-							$tmp_unprocessed_iris[$tmp_iri] = 'NA';
-						}
-					}
-				}
-
-				//fix for "n0pred" beening used for different xmlnss.
-				for($i=$num_lines-1; $i>=0; $i--) {
-					if (isset($lines[$i]) && strpos($lines[$i], '<n0pred:')!==false) {
-						preg_match('/xmlns:n0pred="(\S+)"/', $lines[$i], $matches);
-						$NSTmp=$matches[1];
-						
-						if (array_key_exists($NSTmp, $outputNSs)) {
-							$prefixTmp = $outputNSs[$NSTmp];
-						}
-						else {
-							$tokens = preg_split('/\//', trim($NSTmp));
-							$prefixTmp = preg_replace('/[[:^alnum:]]/', '', array_pop($tokens));
-							if (preg_match('/^\d+$/', $prefixTmp)) {
-								$prefixTmp = preg_replace('/[[:^alnum:]]/', '', array_pop($tokens).$prefixTmp);
-							}
-							$prefixTmp='p_'.$prefixTmp;
-							
-							if (in_array($prefixTmp, $outputNSs)) {
-								$j=1;
-								while (in_array($prefixTmp.$j, $outputNSs)) {
-									$j++;
-								}
-								
-								$prefixTmp .= $j;
-							}
-						}
-						
-						$outputNSs[$NSTmp] = $prefixTmp;
-						
-						$lines[$i] = str_replace('n0pred:', $prefixTmp.':', $lines[$i]);
-						$lines[$i] = preg_replace('/xmlns:n0pred="(\S+)"/', '', $lines[$i]);
-					}
-				}
-				
-				
-				$output = join("\n", $lines);
-				
-				$strOutput .= "\n$output";
-				
-				
-//					print("<!--$output-->\r\n\r\n\r\n\r\n\r\n");
-		
-				if ($includeAllAxiomsRecursively) {
-					preg_match_all('/resource="(.+?)"/', $output, $matches);
-					foreach ($matches[1] as $match) {
-						if (!isset($processed_iris[$match]) && !isset($included_iris[$match])) {
-							$tmp_unprocessed_iris[$match] = 'NA';
-						}
-					}
-				}
-				
-				
-				//get labels and types for related terms
-				if ($includeAllAxioms) {
-					preg_match_all('/resource="(.+?)"/', $output, $matches);
-					foreach ($matches[1] as $match) {
-						if (!isset($processed_iris[$match]) && !isset($included_iris[$match])) {
-							$related_terms[$match] = 'NA';
-						}
-					}
-				}
-
-				preg_match_all('/<rdf:Description rdf:about="([^"]+?)"><rdf:type rdf:resource="http:\/\/www.w3.org\/2002\/07\/owl#Class"\/><\/rdf:Description>/', $output, $matches);
-				foreach ($matches[1] as $match) {
-					$strOutput .= "  <rdf:Description rdf:about=\"$match\">
-<obo:IAO_0000412 rdf:resource=\"$ontology_original_uri\"/>
-</rdf:Description>
-";
-				}
-				
-				preg_match_all('/<rdf:Description rdf:about="([^"]+?)"><rdf:type rdf:resource="http:\/\/www.w3.org\/2002\/07\/owl#ObjectProperty"\/><\/rdf:Description>/', $output, $matches);
-				foreach ($matches[1] as $match) {
-					$strOutput .= "  <rdf:Description rdf:about=\"$match\">
-<obo:IAO_0000412 rdf:resource=\"$ontology_original_uri\"/>
-</rdf:Description>
-";
-				}
-				
-				preg_match_all('/<rdf:Description rdf:about="([^"]+?)"><rdf:type rdf:resource="http:\/\/www.w3.org\/2002\/07\/owl#DatatypeProperty"\/><\/rdf:Description>/', $output, $matches);
-				foreach ($matches[1] as $match) {
-					$strOutput .= "  <rdf:Description rdf:about=\"$match\">
-<obo:IAO_0000412 rdf:resource=\"$ontology_original_uri\"/>
-</rdf:Description>
-";
 				}
 			}
+			
+			# Process descriptions
+			if ( preg_match_all( '/(<rdf:Description[\s\S]*?(?=(rdf:Description>)))/', $rdf, $matches ) ) {
+				foreach( $matches[0] as $match ) {
+					$lines = preg_split( '/\n/', $match );
+					$first_line = array_shift( $lines );
+					preg_match_all( '/rdf:about="([^"]*)"/', $first_line, $tmp_matches );
+					$current_iri = $tmp_matches[1][0];
+					array_pop( $lines );
+					
+					# Remove subClassOf/subPropertyOf/ axioms for parent terms
+					foreach ( $parent_included_iris as $parent_included_iri => $parent_included_label ) {
+						if ( $parent_included_iri == $current_iri ) {
+							foreach ( $lines as $i => $line ) {
+								if ( strpos( $line, "rdfs:subClassOf" ) !== false ) {
+									unset( $lines[$i] );
+									break;
+								}
+								if ( strpos( $line, "rdfs:subPropertyOf" ) !== false ) {
+									unset( $lines[$i] );
+									break;
+								}
+								
+							}
+						}
+					}
+					
+					# Remove axioms if not includeAllAxioms or includeAllAxiomsRecursively
+					if ( !$includeAllAxioms && !$includeAllAxiomsRecursively ) {
+						foreach ( $lines as $i => $line ) {
+							if ( strpos( $line, "rdfs:subClassOf rdf:nodeID=" ) !== false ) {
+								unset( $lines[$i] );
+							}
+							if ( strpos( $line, "rdfs:subPropertyOf rdf:nodeID=" ) !== false ) {
+								unset( $lines[$i] );
+							}
+						}
+					}
+					
+					# Remove disjointWith
+					foreach ( $lines as $i => $line ) {
+						if ( strpos( $line, "disjointWith" ) !== false ) {
+							unset( $lines[$i] );
+						}
+					}
+					
+					# Remove owl:Thing
+					foreach ( $lines as $i => $line ) {
+						if ( strpos( $line, '<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>' ) ) {
+							unset( $lines[$i] );
+						}
+					}
+					
+					# Check for unprocessed iris
+					foreach ( $lines as $i => $line ) {
+						if ( preg_match( '/<(\w+?):(\w+)/', $line, $tmp_match) ) {
+							$tmp_iri = $xmlns[$tmp_match[1]] . $tmp_match[2];
+							if ( !isset( $processed_iris[$tmp_iri] ) ) {
+								$tmp_unprocessed_iris[$tmp_iri] = 'NA';
+							}
+						}
+					}
+					
+					# Reformat namespace
+					foreach ( $lines as $i => $line ) {
+						if ( preg_match( '/<(\w+?):(\w+)/', $line, $tmp_match) ) {
+							if ( !array_search( $tmp_match[1], $outputNSs ) ) {
+								$lines[$i] = str_replace( $tmp_match[1], $outputNSs[$xmlns[$tmp_match[1]]], $line );
+							}
+						}
+						if ( preg_match( '/<\/(\w+?):(\w+)/', $line, $tmp_match) ) {
+							if ( !array_search( $tmp_match[1], $outputNSs ) ) {
+								$lines[$i] = str_replace( $tmp_match[1], $outputNSs[$xmlns[$tmp_match[1]]], $line );
+							}
+						}
+					}
+					
+					# For backward-compatibility with Virtuoso version 6.2.1
+					# Fix for "n0pred" beening used for different xmlnss
+					foreach ( $lines as $i => $line ) {
+						if ( strpos( $line, '<n0pred:' ) !== false ) {
+							preg_match( '/xmlns:n0pred="(\S+)"/', $line, $tmp_matches );
+							$NSTmp = $tmp_matches[1];
+					
+							if ( array_key_exists( $NSTmp, $outputNSs ) ) {
+								$prefixTmp = $outputNSs[$NSTmp];
+							} else {
+								$tokens = preg_split( '/\//', trim( $NSTmp ) );
+								$prefixTmp = preg_replace( '/[[:^alnum:]]/', '', array_pop( $tokens ) );
+								if ( preg_match( '/^\d+$/', $prefixTmp ) ) {
+									$prefixTmp = preg_replace( '/[[:^alnum:]]/', '', array_pop( $tokens ) . $prefixTmp );
+								}
+								$prefixTmp = 'p_' . $prefixTmp;
+									
+								if ( in_array( $prefixTmp, $outputNSs ) ) {
+									$j = 1;
+									while ( in_array( $prefixTmp . $j, $outputNSs ) ) {
+										$j++;
+									}
+									$prefixTmp .= $j;
+								}
+							}
+							$outputNSs[$NSTmp] = $prefixTmp;
+					
+							$lines[$i] = str_replace( 'n0pred:', $prefixTmp . ':', $line );
+							$lines[$i] = preg_replace( '/xmlns:n0pred="(\S+)"/', '', $line );
+						}
+					}
+					
+					# Add 'imported_from' annotation
+					foreach ( $lines as $i => $line ) {
+						if (preg_match( '/<rdf:type rdf:resource="http:\/\/www\.w3\.org\/2002\/07\/owl#Class"/', $line ) ) {
+							$lines[] = "<obo:IAO_0000412 rdf:resource=\"$ontology_original_uri\"/>";
+						}
+						if (preg_match( '/<rdf:type rdf:resource="http:\/\/www\.w3\.org\/2002\/07\/owl#ObjectProperty"/', $line ) ) {
+							$lines[] = "<obo:IAO_0000412 rdf:resource=\"$ontology_original_uri\"/>";
+						}
+						if (preg_match( '/<rdf:type rdf:resource="http:\/\/www\.w3\.org\/2002\/07\/owl#DatatypeProperty"/', $line ) ) {
+							$lines[] = "<obo:IAO_0000412 rdf:resource=\"$ontology_original_uri\"/>";
+						}
+					}
+					
+					# Store processed output
+					if ( !empty( $lines ) ) {
+						$output = join( PHP_EOL, $lines );
+							
+						$strOutput .= $first_line . PHP_EOL . $output . PHP_EOL . "</rdf:Description>";
+					}
+					
+					# Extract unprocessed axioms for includeAllAxiomsRecursively
+					if ( $includeAllAxiomsRecursively ) {
+						preg_match_all( '/resource="(.+?)"/', $output, $tmp_matches );
+						foreach ( $tmp_matches[1] as $tmp_match ) {
+							if ( !isset( $processed_iris[$tmp_match] ) && !isset( $included_iris[$tmp_match] ) ) {
+								$tmp_unprocessed_iris[$tmp_match] = 'NA';
+							}
+						}
+					}
+					
+					# Extract labels and types for related terms
+					if ( $includeAllAxioms ) {
+						preg_match_all( '/resource="(.+?)"/', $output, $tmp_matches );
+						foreach ( $tmp_matches[1] as $tmp_match ) {
+							if ( !isset( $processed_iris[$tmp_match] ) && !isset( $included_iris[$tmp_match] ) ) {
+								$related_terms[$tmp_match] = 'NA';
+							}
+						}
+					}
+				}
+				
+			}
+		/* End 2017/02/23 */
 			$unprocessed_iris = $tmp_unprocessed_iris;
 		}
-	
+//		print_r( $related_terms );
 		
 		//retrieve label & type for related terms.
 		if (!empty($related_terms)) {
@@ -902,11 +919,13 @@ FILTER (?s in (<".join('>
 			
 			$rdf = curl_post_contents($server_endpoint, $fields);
 			
-			if (preg_match_all('/<rdf:Description.*?rdf:Description>/', $rdf, $matches)){
-				foreach ($matches[0] as $line) {
-					$strOutput .= "\n$line";
+			/* 2017/02/23: Update to support Virtuoso 7 */
+			if ( preg_match_all( '/(<rdf:Description[\s\S]*?(?=(<\/rdf:Description>)))/', $rdf, $matches ) ){
+				foreach ( $matches[0] as $i => $match ) {
+					$strOutput .= PHP_EOL . $matches[1][$i] . $matches[2][$i] . PHP_EOL;
 				}
 			}
+			/* End 2017/02/23 */
 			
 			$querystring = "
 PREFIX rdf: <$ns_rdf>
@@ -934,11 +953,13 @@ FILTER (?s in (<".join('>
 			
 			$rdf = curl_post_contents($server_endpoint, $fields);
 			
-			if (preg_match_all('/<rdf:Description.*?rdf:Description>/', $rdf, $matches)){
-				foreach ($matches[0] as $line) {
-					$strOutput .= "\n$line";
+			/* 2017/02/23: Update to support Virtuoso 7 */
+			if ( preg_match_all( '/(<rdf:Description[\s\S]*?(?=(<\/rdf:Description>)))/', $rdf, $matches ) ){
+				foreach ( $matches[0] as $i => $match ) {
+					$strOutput .= PHP_EOL . $matches[1][$i] . $matches[2][$i] . PHP_EOL;
 				}
 			}
+			/* End 2017/02/23 */
 		}
 		
 		if (empty($fileNames) && sizeof($str_inputs)==1) {
@@ -970,6 +991,10 @@ FILTER (?s in (<".join('>
 		$strOutput = preg_replace('/<rdf:Description rdf:about="(\S+)"><rdf:type rdf:resource="http:\/\/www.w3.org\/2002\/07\/owl#ObjectProperty"\/><\/rdf:Description>/', "<owl:ObjectProperty rdf:about=\"$1\"/>", $strOutput);
 		
 		foreach ($outputNSs as $NSTmp => $prefixTmp) {
+			# 2017/02/23 exception of http://www.geneontology.org/formats/oboInOwl#
+			if ( $NSTmp == "http://www.geneontology.org/formats/oboInOwl#" ) {
+				$prefixTmp = "oboInOwl";
+			}
 			$strOutput = "
 		xmlns:$prefixTmp=\"$NSTmp\"" . $strOutput;
 		}
