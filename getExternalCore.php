@@ -762,11 +762,11 @@ FILTER (?s in (<".join('>
 						foreach ( $parent_included_iris as $parent_included_iri => $parent_included_label ) {
 							if ( $parent_included_iri == $current_iri ) {
 								foreach ( $lines as $i => $line ) {
-									if ( strpos( $line, "rdfs:subClassOf" ) !== false ) {
+									if ( isset( $lines[$i] ) && strpos( $line, "rdfs:subClassOf" ) !== false ) {
 										unset( $lines[$i] );
 										break;
 									}
-									if ( strpos( $line, "rdfs:subPropertyOf" ) !== false ) {
+									if ( isset( $lines[$i] ) && strpos( $line, "rdfs:subPropertyOf" ) !== false ) {
 										unset( $lines[$i] );
 										break;
 									}
@@ -778,26 +778,26 @@ FILTER (?s in (<".join('>
 						foreach ( $lines as $i => $line ) {
 							# Remove axioms if not includeAllAxioms or includeAllAxiomsRecursively
 							if ( !$includeAllAxioms && !$includeAllAxiomsRecursively ) {
-								if ( strpos( $line, "rdfs:subClassOf rdf:nodeID=" ) !== false ) {
+								if ( isset( $lines[$i] ) && strpos( $line, "rdfs:subClassOf rdf:nodeID=" ) !== false ) {
 									unset( $lines[$i] );
 								}
-								if ( strpos( $line, "rdfs:subPropertyOf rdf:nodeID=" ) !== false ) {
+								if ( isset( $lines[$i] ) && strpos( $line, "rdfs:subPropertyOf rdf:nodeID=" ) !== false ) {
 									unset( $lines[$i] );
 								}
 							}
 						
 							# Remove disjointWith
-							if ( strpos( $line, "disjointWith" ) !== false ) {
+							if ( isset( $lines[$i] ) && strpos( $line, "disjointWith" ) !== false ) {
 								unset( $lines[$i] );
 							}
 						
 							# Remove owl:Thing
-							if ( strpos( $line, '<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>' ) ) {
+							if ( isset( $lines[$i] ) && strpos( $line, '<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>' ) ) {
 								unset( $lines[$i] );
 							}
 						
 							# Check for unprocessed iris
-							if ( preg_match( '/<(\w+?):(\w+)/', $line, $tmp_match) ) {
+							if ( isset( $lines[$i] ) && preg_match( '/<(\w+?):(\w+)/', $line, $tmp_match) ) {
 								$tmp_iri = $xmlns[$tmp_match[1]] . $tmp_match[2];
 								if ( !isset( $processed_iris[$tmp_iri] ) ) {
 									$tmp_unprocessed_iris[$tmp_iri] = 'NA';
@@ -805,12 +805,12 @@ FILTER (?s in (<".join('>
 							}
 						
 							# Reformat namespace
-							if ( preg_match( '/<(\w+?):(\w+)/', $line, $tmp_match) ) {
+							if ( isset( $lines[$i] ) && preg_match( '/<(\w+?):(\w+)/', $line, $tmp_match) ) {
 								if ( !array_search( $tmp_match[1], $outputNSs ) ) {
 									$lines[$i] = str_replace( $tmp_match[1], $outputNSs[$xmlns[$tmp_match[1]]], $line );
 								}
 							}
-							if ( preg_match( '/<\/(\w+?):(\w+)/', $line, $tmp_match) ) {
+							if ( isset( $lines[$i] ) && preg_match( '/<\/(\w+?):(\w+)/', $line, $tmp_match) ) {
 								if ( !array_search( $tmp_match[1], $outputNSs ) ) {
 									$lines[$i] = str_replace( $tmp_match[1], $outputNSs[$xmlns[$tmp_match[1]]], $line );
 								}
@@ -818,7 +818,7 @@ FILTER (?s in (<".join('>
 						
 							# For backward-compatibility with Virtuoso version 6.2.1
 							# Fix for "n0pred" beening used for different xmlnss
-							if ( strpos( $line, '<n0pred:' ) !== false ) {
+							if ( isset( $lines[$i] ) && strpos( $line, '<n0pred:' ) !== false ) {
 								preg_match( '/xmlns:n0pred="(\S+)"/', $line, $tmp_matches );
 								$NSTmp = $tmp_matches[1];
 						
@@ -847,13 +847,13 @@ FILTER (?s in (<".join('>
 							}
 						
 							# Add 'imported_from' annotation
-							if (preg_match( '/<rdf:type rdf:resource="http:\/\/www\.w3\.org\/2002\/07\/owl#Class"/', $line ) ) {
+							if ( isset( $lines[$i] ) && preg_match( '/<rdf:type rdf:resource="http:\/\/www\.w3\.org\/2002\/07\/owl#Class"/', $line ) ) {
 								$lines[] = "<obo:IAO_0000412 rdf:resource=\"$ontology_original_uri\"/>";
 							}
-							if (preg_match( '/<rdf:type rdf:resource="http:\/\/www\.w3\.org\/2002\/07\/owl#ObjectProperty"/', $line ) ) {
+							if ( isset( $lines[$i] ) && preg_match( '/<rdf:type rdf:resource="http:\/\/www\.w3\.org\/2002\/07\/owl#ObjectProperty"/', $line ) ) {
 								$lines[] = "<obo:IAO_0000412 rdf:resource=\"$ontology_original_uri\"/>";
 							}
-							if (preg_match( '/<rdf:type rdf:resource="http:\/\/www\.w3\.org\/2002\/07\/owl#DatatypeProperty"/', $line ) ) {
+							if ( isset( $lines[$i] ) && preg_match( '/<rdf:type rdf:resource="http:\/\/www\.w3\.org\/2002\/07\/owl#DatatypeProperty"/', $line ) ) {
 								$lines[] = "<obo:IAO_0000412 rdf:resource=\"$ontology_original_uri\"/>";
 							}
 						}
