@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=1" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1310507496526" name="http://ontofox.hegroup.org/hep40uu7.owl" uri="output1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1310507496526" name="http://ontofox.hegroup.org/dy3k3h26.owl" uri="output2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1310507496526" name="http://ontofox.hegroup.org/dji7btvx.owl" uri="output3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1310507496526" name="http://ontofox.hegroup.org/ktzhjpng.owl" uri="output4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1310508203714" name="http://www.ifomis.org/bfo/1.1" uri="bfo-1.1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1310584513881" name="http://ontofox.hegroup.org/8b70p680.owl" uri="example1_output.owl"/>
+    </group>
+</catalog>

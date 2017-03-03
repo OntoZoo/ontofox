@@ -1,4 +1,4 @@
-<?
+<?php 
 require_once('../inc/recaptcha-php-1.9/recaptchalib.php');
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -14,7 +14,7 @@ require_once('../inc/recaptcha-php-1.9/recaptchalib.php');
 
 <body>
 <div id="topbanner"><a href="/index.php"><img src="../Images/logo.gif" alt="Logo" width="280" height="50" border="0"></a></div>
-<div id="topnav"><a href="../index.php" class="topnav">Home</a><a href="../introduction.php" class="topnav">Introduction</a><a href="../tutorial/index.php" class="topnav">Tutorial</a><a href="../faqs.php" class="topnav">FAQs</a><a href="../references.php" class="topnav">References</a><a href="../links.php" class="topnav">Links</a><a href="../contactus.php" class="topnav">Contact</a><a href="../acknowledge.php" class="topnav">Acknowledge</a></div>
+<div id="topnav"><a href="../index.php" class="topnav">Home</a><a href="../introduction.php" class="topnav">Introduction</a><a href="../tutorial/index.php" class="topnav">Tutorial</a><a href="../faqs.php" class="topnav">FAQs</a><a href="../references.php" class="topnav">References</a><a href="../download.php" class="topnav">Download</a><a href="../links.php" class="topnav">Links</a><a href="../contactus.php" class="topnav">Contact</a><a href="../acknowledge.php" class="topnav">Acknowledge</a><a href="../news.php" class="topnav">News</a></div>
 <div id="mainbody">
 <!-- InstanceBeginEditable name="Main" -->
       <form action="feedback_submit.php" method="post" name="SubmitFeedbackForm" id="SubmitFeedbackForm">
@@ -45,7 +45,7 @@ require_once('../inc/recaptcha-php-1.9/recaptchalib.php');
 
           <tr>
             <td>Verify via reCAPTCHA:</td>
-            <td><?=recaptcha_get_html(RECAPTCHA_PUBLICKEY);?></td>
+            <td><?php echo recaptcha_get_html(RECAPTCHA_PUBLICKEY);?></td>
           </tr>
           <tr>
             <td colspan="2" align="center"><input name="submit" type="submit" value="Submit" />

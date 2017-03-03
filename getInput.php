@@ -1,4 +1,4 @@
-<?
+<?php 
 /**
  * Author: Zuoshuang Xiang
  * The University Of Michigan
@@ -23,6 +23,7 @@ $top_term_iris2 = $vali->getInput('top_term_iris2', 'Top level term IRIs to be i
 $retrieval_setting = $vali->getInput('retrieval_setting', 'Source term retrieval setting', 0, 128);
 $annotation_iris = $vali->getInput('annotation_iris', 'annotation IRIs to be included', 0, 8192);
 $outputURI = $vali->getInput('output_iri', 'URI of the OWL(RDF/XML) output file', 0, 128);
+$excluding_annotation_iris = $vali->getInput('excluding_annotation_iris', 'annotation IRIs to be excluded', 0, 8192);
 
 
 $str_inputs = "[URI of the OWL(RDF/XML) output file]
@@ -40,11 +41,11 @@ $top_term_iris
 [Source term retrieval setting]
 $retrieval_setting
 
-[Branch extractions from source term URIs and target direct superclass URIs]
-$top_term_iris2
-
 [Source annotation URIs]
-$annotation_iris";
+$annotation_iris
+
+[Source annotation URIs to be excluded]
+$excluding_annotation_iris";
 
 
 print($str_inputs);

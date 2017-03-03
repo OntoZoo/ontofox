@@ -51,12 +51,12 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0002376 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0002376 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0002376">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0002376">
         <rdfs:label xml:lang="en"
             >immune system process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0008150"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -67,12 +67,12 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0006950 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0006950 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0006950">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006950">
         <rdfs:label xml:lang="en"
             >response to stress</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0050896"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -87,12 +87,12 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0006952 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0006952 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0006952">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006952">
         <rdfs:label xml:lang="en"
             >defense response</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006950"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006950"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -111,12 +111,12 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0006955 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0006955 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0006955">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006955">
         <rdfs:label xml:lang="en">immune response</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0002376"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0050896"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0002376"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -126,12 +126,12 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0006959 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0006959 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0006959">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006959">
         <rdfs:label xml:lang="en"
             >humoral immune response</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006955"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006955"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -142,9 +142,9 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0008150 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0008150">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
         <rdfs:label xml:lang="en"
             >biological_process</rdfs:label>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
@@ -161,12 +161,12 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0009607 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0009607 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0009607">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009607">
         <rdfs:label xml:lang="en"
             >response to biotic stimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0050896"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -177,12 +177,12 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0009617 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0009617 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0009617">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009617">
         <rdfs:label xml:lang="en"
             >response to bacterium</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0051707"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051707"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -195,13 +195,13 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0019730 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0019730 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0019730">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019730">
         <rdfs:label xml:lang="en"
             >antimicrobial humoral response</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006959"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0051707"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006959"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051707"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -212,13 +212,13 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0019731 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0019731 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0019731">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019731">
         <rdfs:label xml:lang="en"
             >antibacterial humoral response</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0019730"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0042742"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019730"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0042742"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -229,13 +229,13 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0042742 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0042742 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0042742">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0042742">
         <rdfs:label xml:lang="en"
             >defense response to bacterium</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006952"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0009617"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006952"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009617"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -254,12 +254,12 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0043152 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0043152 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0043152">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043152">
         <rdfs:label xml:lang="en"
             >induction of bacterial agglutination</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0019731"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019731"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -270,12 +270,12 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0050896 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0050896 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0050896">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050896">
         <rdfs:label xml:lang="en"
             >response to stimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0008150"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -288,12 +288,12 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0051704 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0051704 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0051704">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051704">
         <rdfs:label xml:lang="en"
             >multi-organism process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0008150"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"
@@ -310,13 +310,13 @@
     
 
 
-    <!-- http://purl.org/obo/owl/GO#GO_0051707 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0051707 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_0051707">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051707">
         <rdfs:label xml:lang="en"
             >response to other organism</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0009607"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0051704"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009607"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051704"/>
         <obo:OBI_0000283 rdf:datatype="&xsd;anyURI"
             >http://purl.org/obo/owl/GO</obo:OBI_0000283>
         <obo:IAO_0000115 xml:lang="en"

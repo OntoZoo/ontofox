@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+  <!ENTITY obo 'http://purl.obolibrary.org/obo/'>
+  <!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+  <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+  <!ENTITY oboInOwl 'http://www.geneontology.org/formats/oboInOwl#'>]>
+<rdf:RDF
+    xmlns:oboInOwl="&oboInOwl;"
+    xmlns:rdf="&rdf;"
+    xmlns:obo="&obo;"
+    xmlns:owl="&owl;"
+    xmlns:rdfs="&rdfs;"
+  xml:base="http://ontofox.hegroup.org/8b70p680.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:about="&obo;OBI_0000443">
+    <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >analyte assay</obo:IAO_0000111>
+    <obo:IAO_0000115 xml:lang="en">An assay with the objective to capture information about the presence, concentration, or amount of an analyte in an evaluant.</obo:IAO_0000115>
+    <rdfs:label xml:lang="en">analyte assay</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="&obo;OBI_0000070"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="&obo;OBI_0000011">
+    <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+    <rdfs:label xml:lang="en">planned process</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >planned process</obo:IAO_0000111>
+    <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+  </owl:Class>
+  <owl:Class rdf:about="&obo;OBI_0000070">
+    <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    <obo:IAO_0000115 xml:lang="en">A planned process with the objective to produce information about some evaluant</obo:IAO_0000115>
+    <rdfs:label xml:lang="en">assay</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+    <obo:IAO_0000111 xml:lang="en">assay</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="&obo;OBI_0000661">
+    <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ELISA is an assay where an enzyme linked antibody is used to detect a plate bound material in a liquid (the evaluant) utilizing a chemiluminescent reaction. The detected signal is proxy for the concentration of an analyte in the evaluant.</obo:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="&obo;OBI_0000443"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ELISA</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ELISA</rdfs:label>
+  </owl:Class>
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+    <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+    <rdfs:label xml:lang="en">definition</rdfs:label>
+    <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
+    <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+    <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+    <rdfs:label xml:lang="en">imported from</rdfs:label>
+  </owl:AnnotationProperty>
+</rdf:RDF>

@@ -2,7 +2,7 @@
 <html><!-- InstanceBegin template="/Templates/default.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>OntoFox</title>
+<title>Ontofox</title>
 <!-- InstanceEndEditable --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="shortcut icon" href="/favicon.ico" />
 <link href="styleMain.css" rel="stylesheet" type="text/css">
@@ -11,12 +11,13 @@
 
 <body>
 <div id="topbanner"><a href="/index.php"><img src="Images/logo.gif" alt="Logo" width="280" height="50" border="0"></a></div>
-<div id="topnav"><a href="index.php" class="topnav">Home</a><a href="introduction.php" class="topnav">Introduction</a><a href="tutorial/index.php" class="topnav">Tutorial</a><a href="faqs.php" class="topnav">FAQs</a><a href="references.php" class="topnav">References</a><a href="links.php" class="topnav">Links</a><a href="contactus.php" class="topnav">Contact</a><a href="acknowledge.php" class="topnav">Acknowledge</a></div>
+<div id="topnav"><a href="index.php" class="topnav">Home</a><a href="introduction.php" class="topnav">Introduction</a><a href="tutorial/index.php" class="topnav">Tutorial</a><a href="faqs.php" class="topnav">FAQs</a><a href="references.php" class="topnav">References</a><a href="download.php" class="topnav">Download</a><a href="links.php" class="topnav">Links</a><a href="contactus.php" class="topnav">Contact</a><a href="acknowledge.php" class="topnav">Acknowledge</a><a href="news.php" class="topnav">News</a></div>
 <div id="mainbody">
 <!-- InstanceBeginEditable name="Main" -->
 <h3 class="head3_darkred">Acknowledgements</h3>
-<p>The OntoFox software is developed with the support of NIH-NIAID grant R01AI081062, and  by a Rackham Pilot Research grant to Dr. Yongqun &quot;Oliver&quot; He at the University of Michigan. We appreciate suggestions provided by Melanie Courtot and Alan Ruttenberg from the OBI Consortium.</p>
-<p>&nbsp;</p>
+<p>The Ontofox software is primarily developed by  Yongqun &quot;Oliver&quot; He's group at the University of Michigan Medical School, which was supported by  NIH-NIAID grant R01AI081062, and  by a Rackham Pilot Research grant  at the University of Michigan. </p>
+<p>Our collaborators on the Ontofox software development include M&eacute;lanie Courtot and  Ryan R. Brinkman, who are supported by grant R01EB005034 from the National Institute of Biomedical Imaging and Bioengineering, National Institutes of Health, by the Public Health Agency of Canada / Canadian Institutes of Health Research Influenza Research Network (PCIRN), and by the Michael Smith Foundation for Health Research.</p>
+<p>Our collaborator Alan Ruttenberg is a Principal Scientist at Science Commons. </p>
 <p>&nbsp;</p>
 <!-- InstanceEndEditable -->
 </div>
